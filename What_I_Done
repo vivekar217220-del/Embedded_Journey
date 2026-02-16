@@ -1,0 +1,100 @@
+Project Journey Details Step By Step :-
+
+1. Water Level Indicator System :-
+- This is an Acadmic Project but it is also Done in Group of 2 Me and one is Raj Patel. 
+- Connections :-
+| Item                              | Pin / Probe | Connect To                     |
+| --------------------------------- | ----------- | ------------------------------ |
+| **Common Probe (Bottom of Tank)** | GND Wire    | Battery –                      |
+| **Low Level Probe**               | Signal      | 10kΩ → Base of Q1              |
+| **Middle Level Probe**            | Signal      | 10kΩ → Base of Q2              |
+| **High Level Probe**              | Signal      | 10kΩ → Base of Q3              |
+| **Q1 (BC547 – Low Level)**        | Collector   | Green LED +                    |
+|                                   | Emitter     | GND                            |
+| **Q2 (BC547 – Mid Level)**        | Collector   | Yellow LED +                   |
+|                                   | Emitter     | GND                            |
+| **Q3 (BC547 – High Level)**       | Collector   | Red LED + + Buzzer +           |
+|                                   | Emitter     | GND                            |
+| **Green LED –**                   | –           | GND via 220Ω                   |
+| **Yellow LED –**                  | –           | GND via 220Ω                   |
+| **Red LED –**                     | –           | GND via 220Ω                   |
+| **Buzzer –**                      | –           | GND                            |
+| **Battery +**                     | +V          | All LED + (through collectors) |
+| **Battery –**                     | GND         | Common probe + all emitters    |
+
+
+For Making this Simple Projet i use  a first Making this like a Board but than facing it's all parts like Soldering and all things i use than the Breadboard.
+
+
+2. Robotics Car :-
+
+-For making an this car first of all we make a One Group of My friend and We Think like similarly Like We have to do something So we Make this Using Some Fundamentals , Some Used an AI Also Use a Better Advice From the Professors also.
+For making this Help and giving that Idea Is the 2 Professors :- Dr. Ravi kant and,
+                                                                 Dr. Ankur Changela. 
+
+-Than we Buy required Products and step by step implementing those and some fundamentals also Build . We know like a Where to give a power supply than where to connect the Inputs And the How to actuating the Gearmotors Using the Bluettoth Controller , Ultrasonic Sensor , And Manually also.
+We first us the L298d but we don't know but it's than not working so we Use the L293D and succesfully Do connections but at every Stage we Face the Challanges and we Step by step done it by many efforts. 
+
+-Connections :-
+| Module                 | Pin         | Connects To                                      |
+| ---------------------- | ----------- | ------------------------------------------------ |
+| **HC-SR04 Ultrasonic** | VCC         | Arduino 5V                                       |
+|                        | GND         | Arduino GND                                      |
+|                        | TRIG        | Arduino D9                                       |
+|                        | ECHO        | Arduino D10                                      |
+| **HC-05 Bluetooth**    | VCC         | Arduino 5V                                       |
+|                        | GND         | Arduino GND                                      |
+|                        | TXD         | Arduino D2                                       |
+|                        | RXD         | Arduino D3                                       |
+| **L298N Motor Driver** | ENA         | Arduino D5 (PWM)                                 |
+|                        | IN1         | Arduino D6                                       |
+|                        | IN2         | Arduino D7                                       |
+|                        | IN3         | Arduino D8                                       |
+|                        | IN4         | Arduino D11                                      |
+|                        | ENB         | Arduino D4 (PWM)                                 |
+|                        | +12V        | Battery +                                        |
+|                        | GND         | Battery – (also Arduino GND – **common ground**) |
+| **Motors**             | OUT1 & OUT2 | Left Motor                                       |
+|                        | OUT3 & OUT4 | Right Motor                                      |
+
+
+Also One Face is atlast is on the RX-TX for uploading the Code in the Arduino we Must first out the pins from arduino of RX-TX and than we connect it for Run this is simple Rule we Knows After Facing this .
+
+3. CPU :- 
+-This is my Project which is not making in Group and It's Simple Funda is the How to the CPU Gets data than fetch it and how it goes in working part this concept is the Heart Of the CPU.
+-Data Flow :-
+Memory → Instruction Register  
+Instruction Register → Control Unit  
+Register A + Register B → ALU  
+ALU → Accumulator  
+Accumulator → Output
+-CPU Used Components :-
+| CPU Block                | Component Used                     | Purpose                                |
+| ------------------------ | ---------------------------------- | -------------------------------------- |
+| **Clock Unit**           | NE555 Timer IC                     | Generates clock pulses                 |
+| **Register A**           | 74LS173                            | Stores Operand A                       |
+| **Register B**           | 74LS173                            | Stores Operand B                       |
+| **ALU**                  | 74LS181                            | Performs Arithmetic & Logic operations |
+| **Accumulator**          | 74LS173                            | Stores ALU result                      |
+| **Program Counter**      | 74LS161                            | Generates next instruction address     |
+| **Instruction Register** | 74LS173                            | Holds current instruction              |
+| **Memory**               | 28C16 EEPROM                       | Stores program                         |
+| **Control Unit**         | 74LS138 Decoder                    | Generates control signals              |
+| **Output Display**       | 7-Segment Display (Common Cathode) | Displays output                        |
+| **Data Bus Buffer**      | 74LS245                            | Controls data flow direction           |
+
+Accumlator Connections (Heart Of CPU):-
+| Pin Group | Connected To       |
+| --------- | ------------------ |
+| A0–A3     | Register A Outputs |
+| B0–B3     | Register B Outputs |
+| S0–S3     | Control Unit       |
+| M (Mode)  | Control Unit       |
+| Carry In  | Control Unit       |
+| F0–F3     | Accumulator Inputs |
+
+4. Embedded Projects (Learning ): (Hardware and Simulation Based ) 
+(Component Used :- Hardware Component , Proteus 8 Professional ).
+1.  Using an ATMEGA2560 making an the LED Blinking for Study a Simple Working
+2.  Using an ATMEGA2560 Making an the 7-Segment Display to shows the 0-9 Values.
+3. Using an ATMEGA2560 Actuating an Gear Motor Using the L293D and Connecting Wires .
