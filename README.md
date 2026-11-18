@@ -1,26 +1,25 @@
 # Embedded Systems Journey
 
-I’m Vivek Chaudhary, an engineering student documenting hands-on work in microcontrollers, robotics, and electronics. This portfolio connects project demos with the notes behind them.
+A project and lab journal by Vivek Chaudhary, an ICT engineering student at Pandit Deendayal Energy University. The work covers sensor interfacing, microcontroller peripherals, motor control, and digital logic.
 
-## Projects
+## Featured builds
 
-| Project | What it demonstrates |
+| Build focus | Repository |
 | --- | --- |
-| [Obstacle-Avoiding Robotic Car](https://github.com/vivekar217220-del/Ultrasonic-and-Bluetooth-Controlled-Obstacle-Avoiding-Robotic-Car-using-Arduino-and-Motor-Shield) | Arduino car with ultrasonic obstacle detection, Bluetooth control, and a motor shield. |
-| [RevAlert](https://github.com/vivekar217220-del/PWM-Based-DC-Motor-Speed-Controller-with-RPM-Display-and-Safety-Indication-System) | ATmega2560 PWM motor controller with an LCD speed estimate, LED zones, and a buzzer. |
-| [ESP32 Air Quality Monitor](https://github.com/vivekar217220-del/AQI_Monitoring_System-) | Environmental sensor readings, a simulated PM2.5 index, local alerts, and HTTP/MQTT demo recordings. |
-| [IR Smart Home Automation](https://github.com/vivekar217220-del/Remote-Control-Based-Home-Automation-for-Smart-Home-.) | NEC infrared remote decoding and multi-relay control in Tinkercad. |
-| [AVR Interrupt Demo](https://github.com/vivekar217220-del/Embedded_Interrupts) | ATmega2560 external interrupt and reset behavior demonstrated with LEDs and a buzzer. |
-| [8-Bit CPU in Logisim](https://github.com/vivekar217220-del/Simple-8-Bit-CPU-Design-using-Logisim) | Digital logic design that illustrates the fetch–decode–execute cycle. |
-| [Dual-Output Regulated Power Supply](https://github.com/vivekar217220-del/Dual-Output-Regulated-Power-Supply-230V-AC-to-12V-9V-DC-) | Proteus simulation of 12 V and 9 V regulated DC outputs. |
+| ESP32 sensor integration, local displays and alerts, and a simulated AQI | [ESP32 Air Quality Monitoring System](https://github.com/vivekar217220-del/AQI_Monitoring_System-) |
+| Ultrasonic obstacle avoidance, Bluetooth commands, and motor control | [Arduino Smart Robotic Car](https://github.com/vivekar217220-del/Ultrasonic-and-Bluetooth-Controlled-Obstacle-Avoiding-Robotic-Car-using-Arduino-and-Motor-Shield) |
+| ATmega2560 motor-control simulation with ADC, Timer1 PWM, and a display. | [RevAlert](https://github.com/vivekar217220-del/PWM-Based-DC-Motor-Speed-Controller-with-RPM-Display-and-Safety-Indication-System) |
+| External interrupt handling and reset behavior with LED and buzzer feedback. | [AVR Interrupt Demo](https://github.com/vivekar217220-del/Embedded_Interrupts) |
+| NEC infrared decoding and relay control in Tinkercad. | [IR Home Automation](https://github.com/vivekar217220-del/Remote-Control-Based-Home-Automation-for-Smart-Home-.) |
+| Digital logic model of the fetch–decode–execute cycle. | [8-Bit CPU in Logisim](https://github.com/vivekar217220-del/Simple-8-Bit-CPU-Design-using-Logisim) |
+| Proteus simulation of regulated 12 V and 9 V outputs. | [Dual-Output Power Supply](https://github.com/vivekar217220-del/Dual-Output-Regulated-Power-Supply-230V-AC-to-12V-9V-DC-) |
 
-## Lab notes
+## Project notes
 
-- [Project journal](What_I_Done) includes the water-level indicator group build and notes from the robotic car project.
-- [Personal details](Personal_Details) provides background on my technical interests.
+The [project journal](What_I_Done) records hardware iterations on the robotic car and a water-level indicator built with a classmate. It includes component choices, connection notes, and lessons from assembly.
 
-## Skills I’m practicing
+## Engineering topics
 
-- **Firmware** · Embedded C, Arduino programming, GPIO, PWM, serial communication, and sensor interfacing
-- **Hardware** · Arduino and AVR boards, ultrasonic and IR sensors, displays, buzzers, and motor drivers
-- **Foundations** · Basic circuit design and introductory work with STM32, Raspberry Pi, and FPGA
+- **Programming and peripherals** — Embedded C, Arduino sketches, GPIO, timers, PWM, ADC, and external interrupts
+- **Hardware integration** — Sensors, motor drivers, displays, LEDs, and buzzers
+- **Circuit design** — Digital logic in Logisim and circuit simulation in Proteus and Tinkercad
