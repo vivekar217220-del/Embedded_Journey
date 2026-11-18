@@ -1,53 +1,39 @@
-🚀 Embedded Systems Journey – Vivek
+# Embedded Systems Journey
 
-Welcome to my **Embedded Systems Learning Journey Repository** 👨‍💻⚡  
-This repository documents my progress in **Embedded Systems**, covering hardware interfacing, microcontroller programming, and practical electronics projects.
+A project and lab journal by Vivek Chaudhary, an ICT engineering student at Pandit Deendayal Energy University. The portfolio traces how signals enter a system, how the controller processes them, and how to observe the output in hardware or simulation.
 
-It also acts as my **technical portfolio** hosted on :contentReference[oaicite:0]{index=0} for internships and entry-level embedded roles.
+## Project portfolio
 
----
-📌 About Me
+| Project | Engineering focus | What to look for |
+| --- | --- | --- |
+| [ESP32 Air Quality Monitoring System](https://github.com/vivekar217220-del/AQI_Monitoring_System-) | ADC sensor input, I²C display, status alerts, and Wi-Fi telemetry experiments | Pin assignments, local monitoring firmware, and HTTP and MQTT recordings. The AQI uses simulated PM2.5. |
+| [Arduino Smart Robotic Car](https://github.com/vivekar217220-del/Ultrasonic-and-Bluetooth-Controlled-Obstacle-Avoiding-Robotic-Car-using-Arduino-and-Motor-Shield) | Ultrasonic obstacle detection, Bluetooth commands, and motor control | Demo recording and build notes about driver and wiring iterations. |
+| [RevAlert](https://github.com/vivekar217220-del/PWM-Based-DC-Motor-Speed-Controller-with-RPM-Display-and-Safety-Indication-System) | ATmega2560 ADC, Timer1 PWM, display, and threshold alarms | How a potentiometer input controls the motor duty cycle and produces a displayed RPM estimate. |
+| [AVR Interrupt Demo](https://github.com/vivekar217220-del/Embedded_Interrupts) | External interrupts, reset behavior, and GPIO | LED and buzzer indications that make the interrupt and reset events observable. |
+| [IR Home Automation](https://github.com/vivekar217220-del/Remote-Control-Based-Home-Automation-for-Smart-Home-.) | NEC IR decoding and command dispatch | How timed pulses become appliance output commands in an Arduino and Tinkercad project. |
+| [8-Bit CPU in Logisim](https://github.com/vivekar217220-del/Simple-8-Bit-CPU-Design-using-Logisim) | Digital logic and instruction execution | How the program counter, instruction register, control logic, and ALU contribute to the fetch–decode–execute cycle. |
+| [Dual-Output Power Supply](https://github.com/vivekar217220-del/Dual-Output-Regulated-Power-Supply-230V-AC-to-12V-9V-DC-) | AC-to-DC conversion and linear regulation | Proteus schematic for reviewing the transformer, bridge, filter, and regulator stages. |
 
-🎓 Engineering Student  
-🔧 Focus Area: Embedded Systems  
-💡 Career Goal: Embedded Engineer → Chip Design (VLSI)  
-📚 Currently building strong fundamentals through hands-on projects.
+## Hands-on build notes
 
-I believe in **learning by doing**, so every concept here is backed by real implementation.
+### Water-level indicator
 
----
+An academic breadboard project built with Raj Patel. A common probe and three level probes feed BC547 transistor stages. The stages activate colored LEDs as water reaches each level, and the highest level triggers a buzzer. The journal records the probe connections and the decision to move the prototype to a breadboard during assembly.
 
-## 🎯 Repository Objective
+![Breadboard water-level indicator with probes, LEDs, and buzzer](<Screenshot 2026-02-16 200353.png>)
 
-✅ Build strong embedded fundamentals  
-✅ Practice hardware + software integration  
-✅ Maintain project documentation  
-✅ Showcase practical skills  
-✅ Prepare for internships & placements  
+### Arduino robotic car
 
----
+A group build combining an Arduino, HC-SR04 distance sensor, HC-05 Bluetooth module, motor driver, and geared motors. The journal documents driver experiments, signal and power connections, and serial wiring issues encountered during setup. The team received guidance from Dr. Ravi Kant and Dr. Ankur Changela.
 
-## 🧠 Skills Covered
+![Robotic car chassis with geared motors, controller, and wiring](<Screenshot 2026-02-16 200416.png>)
 
-### 🔹 Programming
-- Embedded C
-- Assembly C
-- Arduino Programming  
-- Basic C/C++ , Python (Basics)
+### CPU design and microcontroller exercises
 
-### 🔹 Hardware
-- Arduino Boards , STM32 , Rasberry Pi , FPGA (Basics).
-- Sensors (Ultrasonic, IR, etc.)
-- Motors and it's Actuating.
-- 7-Segment Display  
-- LEDs, Buzzers  
-- Breadboard Connections  
+The individual CPU project traces instruction data from memory through control logic, registers, and the ALU. The ATmega2560 exercises document GPIO output with a blinking LED, displaying digits 0–9 on a seven-segment display, and driving a geared motor through an L293D.
 
-### 🔹 Concepts
-- Digital I/O  
-- PWM  
-- Serial Communication  
-- Sensor Interfacing  
-- Basic Circuit Design  
+## How to use this journal
 
-
+- Start with the [project journal](What_I_Done) for component tables, build notes, and wiring decisions.
+- Open the linked project repository for any available firmware, schematic, screenshot, or recording.
+- Compare the artifact with its description. Physical build photos capture assembly, while screenshots capture the corresponding design or simulation state.
